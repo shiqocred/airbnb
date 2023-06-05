@@ -11,7 +11,7 @@ const ErrorState: React.FC<ErrorStateProps> = ({
     error
 }) => {
     useEffect(() => {
-      console.log(error)
+      console.error(error)
     }, [error])
     
   return (
