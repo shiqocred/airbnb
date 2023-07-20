@@ -11,7 +11,7 @@ import {
     useForm,
 } from 'react-hook-form';
 import {useLoginModal, useRegisterModal} from '@/app/hooks';
-import {Button, Heading, Input, Modal} from '@/app/components';
+import {Button, Heading, Input, AuthModal} from '@/app/components';
 import { toast } from 'react-hot-toast';
 import { useRouter } from 'next/navigation';
 
@@ -128,7 +128,7 @@ const LoginModal = () => {
     )
     
   return (
-    <Modal 
+    <AuthModal 
         disabled={isLoading}
         isOpen={loginModal.isOpen}
         title='Login'

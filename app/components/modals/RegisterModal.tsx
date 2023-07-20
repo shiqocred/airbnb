@@ -10,10 +10,9 @@ import {
     useForm,
 } from 'react-hook-form';
 import {useLoginModal, useRegisterModal} from '@/app/hooks';
-import {Button, Heading, Input, Modal} from '@/app/components';
+import {Button, Heading, Input, AuthModal} from '@/app/components';
 import { toast } from 'react-hot-toast';
 import { signIn } from 'next-auth/react';
-import { useRouter } from 'next/navigation';
 
 const RegisterModal = () => {
     const registerModal = useRegisterModal();
@@ -130,7 +129,7 @@ const RegisterModal = () => {
     )
     
   return (
-    <Modal 
+    <AuthModal 
         disabled={isLoading}
         isOpen={registerModal.isOpen}
         title='Register'

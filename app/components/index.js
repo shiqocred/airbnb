@@ -19,6 +19,7 @@ import {
     Loader,
 } from './partials';
 import {
+    AuthModal,
     Modal,
     RegisterModal,
     LoginModal,
@@ -58,6 +59,7 @@ export {
     EmptyState,
     HeartButton,
     Loader,
+    AuthModal,
     Modal,
     RegisterModal,
     LoginModal,

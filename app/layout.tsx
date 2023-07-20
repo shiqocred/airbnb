@@ -3,6 +3,7 @@ import './globals.css'
 import { Nunito } from 'next/font/google'
 import {ToasterProvider} from '@/app/providers'
 import {getCurrentUser} from '@/app/actions'
+import Footer from './components/navbar/Footer'
 
 const font = Nunito({ subsets: ['latin'] })
 
@@ -27,9 +28,10 @@ export default async function RootLayout({
           <LoginModal />
           <RegisterModal />
           <Navbar currentUser={currentUser} />
-          <div className="pb-20 pt-28">
+          <div className="pb-20 pt-24">
             {children}
           </div>
+          <Footer />
         </ClientOnly>
       </body>
     </html>

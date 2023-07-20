@@ -4,7 +4,7 @@ import { useCallback, useEffect, useState } from "react";
 import {IoMdClose} from 'react-icons/io';
 import { Button } from "@/app/components";
 
-interface ModalProps {
+interface AuthModalProps {
     isOpen: boolean;
     onClose: () => void;
     onSubmit: () => void;
@@ -17,7 +17,7 @@ interface ModalProps {
     secondaryActionLabel?: string;
 }
 
-const Modal: React.FC<ModalProps> = ({
+const AuthModal: React.FC<AuthModalProps> = ({
     isOpen,
     onClose,
     onSubmit,
@@ -100,11 +100,11 @@ const Modal: React.FC<ModalProps> = ({
                                 {title}
                             </div>
                         </div>
-                        <div className="relative mt-[80px] md:mt-[104px] px-6 h-[calc(100vh-184px)] md:h-[calc((100vh-100px)-208px)] overflow-y-scroll">
+                        <div className="relative mt-[80px] md:mt-[104px] px-6 h-[calc(100vh-430px)] md:h-[calc((100vh-100px)-448px)] overflow-y-scroll">
                             {body}
                         </div>
                         <div className="
-                            flex flex-col justify-center gap-2 h-20 px-6 absolute bottom-0 w-full
+                            flex flex-col justify-center gap-2 h-80 px-6 absolute bottom-0 w-full
                         ">
                             <div className="flex flex-row items-center gap-4 w-full">
                                 {secondaryAction && secondaryActionLabel && (
@@ -131,4 +131,4 @@ const Modal: React.FC<ModalProps> = ({
   )
 }
 
-export default Modal
+export default AuthModal

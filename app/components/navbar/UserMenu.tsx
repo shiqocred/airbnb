@@ -67,6 +67,11 @@ const UserMenu: React.FC<UserMenuProps> = ({
                     {currentUser ? (
                         <>
                             <MenuItem 
+                                className='block md:hidden'
+                                onClick={()=>router.push('/')}
+                                label='Home'
+                            />
+                            <MenuItem 
                                 onClick={()=>router.push('/trips')}
                                 label='My trips'
                             />

@@ -27,7 +27,7 @@ const ListingHead: React.FC<ListingHeadProps> = ({
         />
         <div
             className="
-                w-full h-[60vh] overflow-hidden rounded-xl relative
+                w-full lg:h-[60vh] md:aspect-video aspect-square overflow-hidden rounded-xl relative mt-3
             "
         >
             <Image 
